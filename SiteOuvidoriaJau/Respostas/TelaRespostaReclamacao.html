@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="respostas.css" rel="stylesheet">
+
+    <title>Requerimentos Jaú</title>
+  </head>
+  <body> 
+          <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          <img src="..\..\SiteOuvidoriaJau\imagens\brasaojahu.png" alt="mdo" width="52" height="52" class="d-inline-block align-text-top">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-dark"></a></li>
+          <li><a href="..\..\SiteOuvidoriaJau\MenuInicial\TelaMenuInicial.html" class="nav-link px-2 link-dark">Início</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Contatos</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Suporte Técnico</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control" placeholder="Procurar..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="..\..\SiteOuvidoriaJau\Perfil\TelaPerfil.html">Perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="..\..\SiteOuvidoriaJau\Login\TelaLogin.html">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <br>
+    <form id="form-resposta">
+      <center><h2>Reclamação <span class="badge bg-warning">Novo</span></h2></center>
+        <br>
+            <form class="form-floating">
+               <fieldset disabled>
+                <input type="text" class="form-control" id="cidadao" placeholder="name@example.com" value="João da Silva Sampaio, 53. - Jardim Maria Cibele - Rua Amaral Orthega ">
+          <div id="requerimento" class="form-floating">
+           <textarea class="form-control" placeholder="Leave a comment here" id="requerimento" style="height: 100px">Encontra-se, como na foto, este buraco na minha rua. Peço encarecidamente para que averiguem e arrumem tal. Obrigado!</textarea>
+          </div>
+          </fieldset>
+           <fieldset disabled>
+          <div class="mb-3">
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Pendente">
+          </div>
+        </fieldset>
+          <br>
+              <div class="container px-3 py-4" id="historicos">
+                 <center><h2 class="pb-2 border-bottom">Resposta (Adicionar Informações)</h2></center>
+              </div>
+              <br>
+          <div id="requerimento" class="form-floating">
+           <textarea class="form-control" placeholder="Leave a comment here" id="requerimento" style="height: 100px"></textarea>
+          </div>
+          <br>
+          <center><button type="button" class="btn btn-primary btn-lg" id="liveToastBtn">Notificar Usuário</button>
+           <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                 <div class="toast-header">
+                  <img src="..." class="rounded me-2" alt="...">
+                   <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                 </div>
+                 <div class="toast-body">
+                  Hello, world! This is a toast message.
+                 </div>
+              </div>
+           </div>
+          <a href="http://memoria.bn.br/pdf/008567/per008567_1927_00108.pdf" role="button" class="btn btn-success btn-lg">Prosseguir (Impressão)</a></center>
+    </form>
+    <br>
+  </main>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+       <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>  
+  </body>
+</html>
